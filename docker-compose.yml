@@ -1,6 +1,6 @@
 services:
-  coffeechat:
-    image: beanbeanjuice/coffeechat:latest
+  coffee-calendar:
+    image: beanbeanjuice/coffee-calendar:latest
     restart: unless-stopped
     ports:
       - "3000:3000"

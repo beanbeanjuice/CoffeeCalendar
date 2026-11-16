@@ -33,8 +33,8 @@ const CalendarComponent = (props: CalendarComponentProps) => {
             headerToolbar={{ left: "prev,next today", center: "title", right: "dayGridMonth,timeGridWeek,timeGridDay,listWeek" }}
             views={{
                 timeGridWeek: {
-                    titleFormat: { month: "short", day: "numeric", year: "numeric" }, // "Nov 8 – 14, 2026"
-                    dayHeaderFormat: { weekday: "short", day: "numeric" },           // "S 8", "M 9", …
+                    titleFormat: { month: "short", day: "numeric", year: "numeric" }, // "Nov 8 - 14, 2026"
+                    dayHeaderFormat: { weekday: "short", day: "numeric" }, // "S 8", "M 9" etc
                 },
             }}
             events={props.events}

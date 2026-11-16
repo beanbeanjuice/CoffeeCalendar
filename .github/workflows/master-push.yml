@@ -39,8 +39,8 @@ jobs:
         with:
           push: true
           tags: |
-            beanbeanjuice/coffeechat:dev-latest
-            beanbeanjuice/coffeechat:dev-${{ env.TAG }}
+            beanbeanjuice/coffee-calendar:dev-latest
+            beanbeanjuice/coffee-calendar:dev-${{ env.TAG }}
           provenance: true
           sbom: true
 
