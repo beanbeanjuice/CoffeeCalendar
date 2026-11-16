@@ -10,6 +10,7 @@ export type PublicEvent = {
     end?: string;
     allDay: boolean;
     tentative?: boolean;
+    calendarIndex: number; // color tracking
 };
 
 // prevent like remote code execution or something
@@ -30,7 +31,7 @@ const toPlainText = (raw?: string): string | undefined => {
     return text || undefined;
 };
 
-async function getSingleCalendarEvents(calendarUrl : string, ignoreFree: boolean) {
+async function getSingleCalendarEvents(calendarUrl : string, ignoreFree: boolean, calendarIndex: number) {
     const res = await fetch(calendarUrl);
     if (!res.ok) throw new Error(`ICS fetch failed: ${res.status}`);
     const ics = await res.text();
@@ -55,6 +56,7 @@ async function getSingleCalendarEvents(calendarUrl : string, ignoreFree: boolean
             end: e ? (e.isDate ? e.toString() : e.toJSDate().toISOString()) : undefined,
             allDay: s.isDate,
             tentative: isTentative || undefined,
+            calendarIndex: calendarIndex,
         };
     };
 
@@ -68,13 +70,13 @@ export async function getEvents(ignoreFree: boolean = false): Promise<PublicEven
     "use cache";
     cacheLife("minutes"); // re-fetch from Outlook every few minutes
 
-    const calendarUrls = process.env.CALENDAR_ICS_LINK!.split(",");
+    const calendarUrls = process.env.CALENDAR_ICS_LINK!.split(",").map(u => u.trim());
 
     const events = [];
     const occurrences = [];
 
-    for (const calendarUrl of calendarUrls) {
-        const [singleCalendarEvents, singleCalendarOccurrences] = await getSingleCalendarEvents(calendarUrl, ignoreFree);
+    for (const [index, calendarUrl] of calendarUrls.entries()) {
+        const [singleCalendarEvents, singleCalendarOccurrences] = await getSingleCalendarEvents(calendarUrl, ignoreFree, index);
 
         events.push(...singleCalendarEvents);
         occurrences.push(...singleCalendarOccurrences);
