@@ -13,7 +13,7 @@ export async function generateMetadata(): Promise<Metadata> {
     const publicUrl = process.env.PUBLIC_URL;
 
     return {
-        title: "CoffeeChat",
+        title: "Coffee Calendar",
         description: "A simple, secure way to share your calendar.",
         metadataBase: publicUrl && URL.canParse(publicUrl) ? new URL(publicUrl) : undefined,
     };

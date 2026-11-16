@@ -100,7 +100,7 @@ jobs:
         with:
           push: true
           tags: |
-            beanbeanjuice/coffeechat:unstable
-            beanbeanjuice/coffeechat:pr-${{ github.event.pull_request.number }}
+            beanbeanjuice/coffee-calendar:unstable
+            beanbeanjuice/coffee-calendar:pr-${{ github.event.pull_request.number }}
           provenance: true
           sbom: true
