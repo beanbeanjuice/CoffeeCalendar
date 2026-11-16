@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.6.0](https://github.com/beanbeanjuice/CoffeeCalendar/compare/coffee-calendar-v0.5.0...coffee-calendar-v0.6.0) (2026-11-16)
+
+
+### Features
+
+* [GH-0031] Add Differing Calendar Colors ([#32](https://github.com/beanbeanjuice/CoffeeCalendar/issues/32)) ([7d06022](https://github.com/beanbeanjuice/CoffeeCalendar/commit/7d060227018e2330da4718e29d6be15cbbdd74eb))
+
 ## [0.5.0](https://github.com/beanbeanjuice/CoffeeCalendar/compare/coffee-calendar-v0.4.0...coffee-calendar-v0.5.0) (2026-11-16)
 
 
