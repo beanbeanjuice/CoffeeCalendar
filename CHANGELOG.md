@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.4.1](https://github.com/beanbeanjuice/CoffeeChat/compare/coffee-chat-v0.4.0...coffee-chat-v0.4.1) (2026-11-16)
+
+
+### Bug Fixes
+
+* **deps-dev:** bump eslint-config-next from 16.4.5 to 16.4.6 ([#25](https://github.com/beanbeanjuice/CoffeeChat/issues/25)) ([8f69869](https://github.com/beanbeanjuice/CoffeeChat/commit/8f69869a570f337e54da7d34f6ef8adbe8e4f389))
+* **deps:** bump next from 16.4.5 to 16.4.6 ([#26](https://github.com/beanbeanjuice/CoffeeChat/issues/26)) ([95d4eee](https://github.com/beanbeanjuice/CoffeeChat/commit/95d4eeecbd3e40c6f3914ac04760fee1ddb374af))
+* **deps:** bump sass from 1.108.0 to 1.108.2 ([#27](https://github.com/beanbeanjuice/CoffeeChat/issues/27)) ([9d39fc2](https://github.com/beanbeanjuice/CoffeeChat/commit/9d39fc206bb2a70c162d0a1b0b0a4cf7e6170fd9))
+
 ## [0.4.0](https://github.com/beanbeanjuice/CoffeeChat/compare/coffee-chat-v0.3.1...coffee-chat-v0.4.0) (2026-11-12)
 
 
