@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.6.1](https://github.com/beanbeanjuice/CoffeeCalendar/compare/coffee-calendar-v0.6.0...coffee-calendar-v0.6.1) (2026-11-22)
+
+
+### Bug Fixes
+
+* **deps:** bump @fullcalendar/react from 7.1.4 to 7.1.5 ([#35](https://github.com/beanbeanjuice/CoffeeCalendar/issues/35)) ([2072d6a](https://github.com/beanbeanjuice/CoffeeCalendar/commit/2072d6a3a81d412bedb6e4b3a98d3550239eb447))
+* **deps:** bump dompurify from 3.4.17 to 3.4.18 ([#34](https://github.com/beanbeanjuice/CoffeeCalendar/issues/34)) ([ddfd728](https://github.com/beanbeanjuice/CoffeeCalendar/commit/ddfd728764fd769eec7e56b045db5822c6178df9))
+
 ## [0.6.0](https://github.com/beanbeanjuice/CoffeeCalendar/compare/coffee-calendar-v0.5.0...coffee-calendar-v0.6.0) (2026-11-16)
 
 
